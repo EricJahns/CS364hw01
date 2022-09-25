@@ -1,4 +1,6 @@
 -- SQLite
 SELECT DISTINCT Track.Name
 FROM Track
-NATURAL LEFT JOIN InvoiceLine
+LEFT JOIN InvoiceLine 
+    ON InvoiceLine.TrackId = Track.TrackId
+WHERE InvoiceLine.TrackId IS NULL
