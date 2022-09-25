@@ -1,0 +1,4 @@
+-- SQLite
+SELECT DISTINCT Track.Name
+FROM Track
+NATURAL LEFT JOIN InvoiceLine
